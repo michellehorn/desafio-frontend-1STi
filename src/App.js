@@ -1,7 +1,16 @@
 import React from "react";
+import Home from "./pages/Home";
+import { Background, GlobalStyle } from "./style";
 
 const App = () => {
-  return <h1>Test</h1>;
+  return (
+    <>
+      <GlobalStyle />
+      <Background>
+        <Home />
+      </Background>
+    </>
+  );
 };
 
 export default App;
