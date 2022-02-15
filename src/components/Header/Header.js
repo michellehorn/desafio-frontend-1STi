@@ -5,6 +5,8 @@ const HeaderStyle = styled.header`
   text-align: center;
   font-family: Arial;
   color: white;
+  font-size: 28px;
+  margin-top: 70px;
 `;
 
 const Header = () => {
