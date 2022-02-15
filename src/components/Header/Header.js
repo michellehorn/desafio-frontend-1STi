@@ -3,10 +3,9 @@ import styled from "styled-components";
 
 const HeaderStyle = styled.header`
   text-align: center;
-  font-family: Arial;
   color: white;
-  font-size: 28px;
-  margin-top: 70px;
+  font-size: 22px;
+  margin-top: 50px;
 `;
 
 const Header = () => {
