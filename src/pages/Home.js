@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Card from "../components/Card";
+import WeatherCard from "../components/WeatherCard";
 import Header from "../components/Header";
 
 const Home = () => {
@@ -8,10 +8,10 @@ const Home = () => {
   return (
     <>
       <Header />
-      <Card isOpen={isCardOpen} closeCard={() => setCardOpen(false)}>
-        <Card.Overline>Niterói, RJ - Brasil</Card.Overline>
-        <Card.MainInfo climate="Nublado" temperature="20" />
-      </Card>
+      <WeatherCard isOpen={isCardOpen} closeCard={() => setCardOpen(false)}>
+        <WeatherCard.Overline>Niterói, RJ - Brasil</WeatherCard.Overline>
+        <WeatherCard.MainInfo climate="Nublado" temperature="20" />
+      </WeatherCard>
     </>
   );
 };

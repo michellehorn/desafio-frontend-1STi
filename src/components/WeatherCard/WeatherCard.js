@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { colors } from "../../style-variables";
 
-const CardStyle = styled.div`
+const WeatherCardStyle = styled.div`
   width: 400px;
   height: 200px;
   margin: auto;
@@ -24,14 +24,14 @@ const CloseButton = styled.button`
   cursor: pointer;
 `;
 
-const Card = ({ children, isOpen, closeCard }) => {
+const WeatherCard = ({ children, isOpen, closeCard }) => {
   if (!isOpen) return null;
   return (
-    <CardStyle>
-      {children}
+    <WeatherCardStyle>
       <CloseButton onClick={closeCard}>x</CloseButton>
-    </CardStyle>
+      {children}
+    </WeatherCardStyle>
   );
 };
 
-export default Card;
+export default WeatherCard;
